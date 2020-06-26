@@ -38,7 +38,7 @@ dependencies {
         k, v -> implementation v
     }
     common.each {
-        k, v -> implementation v
+        k, v -> api v
     }
     kapt "com.alibaba:arouter-compiler:${arouter.arouter_compiler}"
     api "com.alibaba:arouter-api:${arouter.arouter_api}" // 换用最新版本
