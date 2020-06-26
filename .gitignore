@@ -9,7 +9,18 @@
 
 # Java class files
 *.class
-
+.gitignore
+.idea
+.gradle
+/build
+gradle
+gradle.properties
+gradlew.bat
+README.md
+local.properties
+settings.gradle
+Base.iml
+gradlew
 # Generated files
 bin/
 gen/
