@@ -1,0 +1,8 @@
+include ':moudle-user'
+include ':moudle-login'
+include ':lib-utils'
+include ':lib-router'
+include ':lib-http'
+include ':lib-common'
+include ':app'
+rootProject.name = "Work"

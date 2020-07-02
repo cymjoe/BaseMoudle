@@ -9,7 +9,7 @@ ext {
             versionName      : "1.0"
     ]
     appId = [
-            "app"  : "com.cymjoe.base",
+            "app"  : "com.cymjoe.work",
             "home" : "com.cymjoe.moudle_home",
             "login": "com.cymjoe.moudle_login",
             "user" : "com.cymjoe.moudle_user"
