@@ -15,7 +15,8 @@ import kotlin.coroutines.coroutineContext
 
 
 object NetManager : BaseRetrofit() {
-     fun createRetrofit(baseUrl: String) {
+
+     fun createRetrofit(baseUrl: String): Retrofit {
         try {
             val map = HashMap<String, String>()
             map["token"] = SPUtils.getInstance().getString("token")
@@ -30,6 +31,7 @@ object NetManager : BaseRetrofit() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
+         return retrofit
     }
 
 }

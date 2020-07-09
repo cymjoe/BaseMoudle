@@ -23,12 +23,12 @@ import javax.net.ssl.*
 
 
 /**
- * ll
+ * cymjoe
  * Created by LiRui on 2017/9/1.
  */
 
 open class BaseRetrofit {
-    protected var retrofit: Retrofit? = null
+     lateinit var retrofit: Retrofit
 
 
     lateinit var map: Map<String, String>
