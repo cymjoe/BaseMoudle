@@ -1,55 +1,55 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
+ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
+INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
 	package
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:3:5-37
-		INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
-		INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
+		INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
-		INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
+		INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
+		INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
-		INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
+		INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:2:1-16:12
+		INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:5:5-14:19
+ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:5:5-14:19
 	android:supportsRtl
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:10:9-35
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:8:9-41
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:9:9-54
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:7:9-43
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:6:9-35
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:11:9-40
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:11:9-40
 activity#com.cymjoe.moudle_user.UserActivity
-ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:12:9-13:20
+ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:12:9-13:20
 	android:name
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml:12:19-47
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml:12:19-47
 uses-sdk
-INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
-INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
-INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
-INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
+INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
+INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
+INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
+INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
-		INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
+		INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
+		INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
-		ADDED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
-		INJECTED from D:\test\Work\moudle-user\src\main\AndroidManifest.xml
+		INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
+		ADDED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml
+		INJECTED from D:\test\BaseMoudle\moudle-user\src\main\AndroidManifest.xml

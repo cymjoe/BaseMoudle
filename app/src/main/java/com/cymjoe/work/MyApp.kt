@@ -1,5 +1,6 @@
 package com.cymjoe.work
 
+import androidx.multidex.MultiDex
 import com.cymjoe.lib_base.base.BaseApplication
 import com.scwang.smartrefresh.layout.SmartRefreshLayout
 import com.scwang.smartrefresh.layout.footer.ClassicsFooter
@@ -17,6 +18,7 @@ class MyApp : BaseApplication() {
             androidContext(this@MyApp)
             modules(appModule)
         }
+        MultiDex.install(this)
     }
     //static 代码段可以防止内存泄露
     init {

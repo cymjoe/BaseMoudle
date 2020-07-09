@@ -51,6 +51,7 @@ ext {
             "progress" : "com.kaopiz:kprogresshud:1.1.0",
             "scope"    : "org.koin:koin-androidx-scope:2.0.1",
             "viewmodel": "org.koin:koin-androidx-viewmodel:2.0.1",
+            "multidex": "androidx.multidex:multidex:2.0.1",
             "eventbus" : "org.greenrobot:eventbus:3.1.1"
     ]
 }

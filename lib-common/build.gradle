@@ -45,4 +45,5 @@ dependencies {
     api project(':lib-router')
     api project(':lib-http')
     api project(':lib-utils')
+    api project(':lib-model')
 }

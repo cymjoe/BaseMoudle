@@ -21,7 +21,7 @@ class MainActivity : BaseActivity<NoDataBinding>() {
     }
 
     override fun initData() {
-
+viewModel.login()
     }
 
     override fun startObserve() {

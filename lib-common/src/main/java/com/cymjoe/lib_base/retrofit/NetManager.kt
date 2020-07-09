@@ -19,7 +19,7 @@ object NetManager : BaseRetrofit() {
      fun createRetrofit(baseUrl: String): Retrofit {
         try {
             val map = HashMap<String, String>()
-            map["token"] = SPUtils.getInstance().getString("token")
+//            map["token"] = SPUtils.getInstance().getString("token")
             val createOkHttpClient = createOkHttpClient(map)
             val builder = Retrofit.Builder()
             retrofit = builder

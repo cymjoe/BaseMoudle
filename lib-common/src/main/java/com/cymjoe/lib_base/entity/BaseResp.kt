@@ -6,7 +6,7 @@ import com.cymjoe.lib_http.APIException
 @Keep
 data class BaseResp<T>(
     var code: Int = 0,
-    var message: String = "",
+    var msg: String = "",
     var desc: String = "",
     var data: T
 
@@ -16,9 +16,9 @@ data class BaseResp<T>(
 
 /*数据解析扩展函数*/
 fun <T> BaseResp<T>.dataConvert(): T {
-    if (code == 1) {
+    if (code == 200) {
         return data
     } else {
-        throw  APIException(code, message)
+        throw  APIException(code, msg)
     }
 }

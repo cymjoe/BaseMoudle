@@ -21,6 +21,10 @@ android {
 
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+        multiDexKeepFile file('maindex_keep.txt')
+
     }
 
     buildTypes {

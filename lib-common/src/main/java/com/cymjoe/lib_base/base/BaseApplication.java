@@ -3,6 +3,8 @@ package com.cymjoe.lib_base.base;
 import android.app.Application;
 import android.os.Build;
 
+import androidx.multidex.MultiDex;
+
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.cymjoe.lib_base.BuildConfig;
 

@@ -5,6 +5,7 @@ import android.content.Context
 import android.os.Environment
 import android.util.Log
 import okhttp3.*
+import okhttp3.internal.platform.Platform
 import retrofit2.Retrofit
 
 import java.io.File
@@ -57,7 +58,15 @@ open class BaseRetrofit {
                 .readTimeout(10, TimeUnit.SECONDS)
                 .addInterceptor(RequestInterceptor())
                 .addInterceptor(baseInterceptor)
-                .addNetworkInterceptor(LoggingInterceptor())
+                .addInterceptor(
+                   LoggingInterceptor.Builder() //构建者模式
+                        .loggable(BuildConfig.DEBUG) //是否开启日志打印
+                        .setLevel(Level.BASIC) //打印的等级
+                        .log(Platform.INFO) // 打印类型
+                        .request("Request") // request的Tag
+                        .response("Response") // Response的Tag
+                        .build())
+
 
         } catch (e: Exception) {
             e.printStackTrace()
@@ -93,43 +102,6 @@ open class BaseRetrofit {
         }
     }
 
-    /**
-     * 日志类
-     */
-    protected inner class LoggingInterceptor : Interceptor {
-        @Throws(Exception::class)
-        override fun intercept(chain: Interceptor.Chain): Response {
-            //这个chain里面包含了request和response，所以你要什么都可以从这里拿
-            val request = chain.request()
-            val t1 = System.nanoTime()//请求发起的时间
-            Log.d(TAG, String.format("发送请求 %s ", request.url()))
-            val h = request.headers()
-            for (s in h.names()) {
-                Log.d(TAG, s + "->" + h[s])
-            }
-
-            val response = chain.proceed(request)
-            try {
-
-
-                val t2 = System.nanoTime()//收到响应的时间
-                val responseBody = response.peekBody((1024 * 1024).toLong())
-                Log.d(
-                    TAG, String.format(
-                        "接收响应: [%s] %n返回json:【%s】 %.1fms%n%s".toLowerCase(Locale.ROOT),
-                        response.request().url(),
-                        responseBody.string(),
-                        (t2 - t1) / 1e6,
-
-                        response.headers()
-                    ) + "code:" + response.code()
-                )
-            } catch (e: Exception) {
-                e.printStackTrace()
-            }
-            return response
-        }
-    }
 
     companion object {
         private const val TAG = "NetWork"

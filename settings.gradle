@@ -1,3 +1,4 @@
+include ':lib-model'
 include ':moudle-user'
 include ':moudle-login'
 include ':lib-utils'
