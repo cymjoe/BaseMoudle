@@ -46,4 +46,6 @@ dependencies {
     api project(':lib-http')
     api project(':lib-utils')
     api project(':lib-model')
+    api project(':lib-widget')
+    api project(':lib-resources')
 }

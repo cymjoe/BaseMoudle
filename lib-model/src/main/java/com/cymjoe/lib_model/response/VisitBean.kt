@@ -1,0 +1,53 @@
+package com.cymjoe.lib_model.response
+
+data class VisitBean(
+    var id: String,
+    val collegeId: String,
+    val categoryName: String,
+    val title: String,
+    val videoUrl: String,
+    val summary: String,
+    val position: String,
+    val introduction: String,
+    val content: String,
+    val auditStatus: String,
+    val realViewStatistics: Int,
+    val virtualViewStatistics: Int,
+    val isTop: Boolean,
+    val keyWord: String,
+    val sort: String,
+    val createTime: Long,
+    val cover: String,
+    val price: Int,
+    val doctorName: String,
+    val doctorTitle: String,
+    val authorId: String,
+    val doctorInfo: String,
+    val comments: String,
+    val praiseCount: String,
+    val isAudio: Boolean,
+    val audioUrl: String,
+    val shares: Int,
+    val articleRtfContentParentId: String,
+    val image: String,
+    val collects: String,
+    val collectId: String,
+    val praiseId: String,
+    val isBuy: String,
+    val doctorPosition: String,
+    val categoryId: String,
+    val isHomeUser: Boolean,
+    val isHomeDoctor: Boolean,
+    val updateTime: Long,
+    val isDelete: Boolean,
+    val category: String,
+    val categoryNames: String,
+    val creator: String,
+    val creatorNames: String,
+    val keyWordList: String,
+    val articleRtfContent: String?
+) {
+    override fun toString(): String {
+        return "VisitBean(id=$id, collegeId='$collegeId', categoryName='$categoryName', title='$title', videoUrl='$videoUrl', summary='$summary', position='$position', introduction='$introduction', content='$content', auditStatus='$auditStatus', realViewStatistics=$realViewStatistics, virtualViewStatistics=$virtualViewStatistics, isTop=$isTop, keyWord='$keyWord', sort='$sort', createTime=$createTime, cover='$cover', price=$price, doctorName='$doctorName', doctorTitle='$doctorTitle', authorId='$authorId', doctorInfo='$doctorInfo', comments='$comments', praiseCount='$praiseCount', isAudio=$isAudio, audioUrl='$audioUrl', shares=$shares, articleRtfContentParentId='$articleRtfContentParentId', image='$image', collects='$collects', collectId='$collectId', praiseId='$praiseId', isBuy='$isBuy', doctorPosition='$doctorPosition', categoryId='$categoryId', isHomeUser=$isHomeUser, isHomeDoctor=$isHomeDoctor, updateTime=$updateTime, isDelete=$isDelete, category='$category', categoryNames='$categoryNames', creator='$creator', creatorNames='$creatorNames', keyWordList='$keyWordList', articleRtfContent=$articleRtfContent)"
+    }
+}

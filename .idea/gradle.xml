@@ -15,10 +15,14 @@
             <option value="$PROJECT_DIR$/lib-common" />
             <option value="$PROJECT_DIR$/lib-http" />
             <option value="$PROJECT_DIR$/lib-model" />
+            <option value="$PROJECT_DIR$/lib-resources" />
             <option value="$PROJECT_DIR$/lib-router" />
             <option value="$PROJECT_DIR$/lib-utils" />
+            <option value="$PROJECT_DIR$/lib-widget" />
             <option value="$PROJECT_DIR$/moudle-login" />
+            <option value="$PROJECT_DIR$/moudle-mine" />
             <option value="$PROJECT_DIR$/moudle-user" />
+            <option value="$PROJECT_DIR$/moudle-work" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

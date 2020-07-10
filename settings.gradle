@@ -1,3 +1,7 @@
+include ':moudle-mine'
+include ':lib-resources'
+include ':moudle-work'
+include ':lib-widget'
 include ':lib-model'
 include ':moudle-user'
 include ':moudle-login'

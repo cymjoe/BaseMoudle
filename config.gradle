@@ -12,11 +12,13 @@ ext {
             "app"  : "com.cymjoe.work",
             "home" : "com.cymjoe.moudle_home",
             "login": "com.cymjoe.moudle_login",
+            "work": "com.cymjoe.moudle_work",
+            "mine": "com.cymjoe.moudle_mine",
             "user" : "com.cymjoe.moudle_user"
     ]
     url = [
-            "debug"  : "",
-            "release": ""
+            "debug"  : "https://crowd.patient.klilalacloud.com/v1.0/",
+            "release": "https://crowd.patient.klilalacloud.com/v1.0/"
 
     ]
     supportLibrary = "1.1.0"

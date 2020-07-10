@@ -10,4 +10,5 @@ object ARoutePath {
     const val LoginActivity = "/login/LoginActivity"
     const val HomeFragment = "/home/HomeFragment"
     const val UserActivity = "/user/UserActivity"
+    const val CloudActivity = "/cloud/CloudActivity"
 }

@@ -1,6 +1,7 @@
 package com.cymjoe.lib_base
 
 import android.app.Activity
+import android.os.Bundle
 import com.blankj.utilcode.util.ToastUtils
 import com.cymjoe.lib_arouter.ARoutePath
 import com.cymjoe.lib_arouter.ARouteUtils
@@ -18,6 +19,16 @@ fun Any.launch(clazz: String) {
 
 fun Activity.launchOver(clazz: String) {
     launch(clazz)
+    finish()
+}
+
+fun Any.launch(clazz: String, bundle: Bundle) {
+    ARouteUtils.launch(clazz, bundle)
+}
+
+
+fun Activity.launchOver(clazz: String,bundle: Bundle) {
+    launch(clazz,bundle)
     finish()
 }
 

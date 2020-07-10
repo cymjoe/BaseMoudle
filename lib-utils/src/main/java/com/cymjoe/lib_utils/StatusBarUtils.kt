@@ -36,7 +36,7 @@ object StatusBarUtils {
     /**
      * 设置状态栏透明
      */
-    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
+
     @TargetApi(19)
     fun setTranslucentStatus(activity: Activity) {
         //5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色
@@ -46,7 +46,9 @@ object StatusBarUtils {
         val option = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LAYOUT_STABLE
         decorView.systemUiVisibility = option
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-        window.statusBarColor = Color.TRANSPARENT
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.statusBarColor = Color.TRANSPARENT
+        }
         //导航栏颜色也可以正常设置
         //window.setNavigationBarColor(Color.TRANSPARENT);
     }

@@ -10,12 +10,12 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 
-class MyApp : BaseApplication() {
+class MyApps : BaseApplication() {
     override fun onCreate() {
         super.onCreate()
         startKoin {
             androidLogger(Level.INFO)
-            androidContext(this@MyApp)
+            androidContext(this@MyApps)
             modules(appModule)
         }
         MultiDex.install(this)

@@ -74,5 +74,7 @@ dependencies {
     if (isRelease) {
         api project(':moudle-user')
         api project(':moudle-login')
+        api project(':moudle-work')
+        api project(':moudle-mine')
     }
 }
