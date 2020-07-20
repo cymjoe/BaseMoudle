@@ -38,7 +38,7 @@ class MainActivity : BaseActivity<NoDataBinding>() {
         FragmentUtils.add(supportFragmentManager, fragmentList, R.id.container, 0)
         launch(ARoutePath.LoginActivity)
 
-
+//
     }
 
 
