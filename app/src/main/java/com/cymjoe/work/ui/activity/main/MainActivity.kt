@@ -9,6 +9,7 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.blankj.utilcode.util.FragmentUtils
 
 import com.cymjoe.lib_arouter.ARoutePath
+import com.cymjoe.lib_base.BuildConfig
 import com.cymjoe.lib_base.base.BaseActivity
 import com.cymjoe.lib_base.entity.NoDataBinding
 import com.cymjoe.lib_base.launch
@@ -19,6 +20,9 @@ import com.cymjoe.moudle_mine.ui.fragment.MineFragment
 import com.cymjoe.work.R
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import java.io.File
+import java.io.FileWriter
+import java.util.*
 
 @Route(path = ARoutePath.MainActivity)
 class MainActivity : BaseActivity<NoDataBinding>() {
@@ -30,12 +34,13 @@ class MainActivity : BaseActivity<NoDataBinding>() {
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun initView() {
-        StatusBarUtils.setStatusBarColor(this, Color.WHITE)
-        StatusBarUtils.setStatusBarDarkTheme(this, true)
+        StatusBarUtils.setTranslucentStatus(this)
         FragmentUtils.add(supportFragmentManager, fragmentList, R.id.container, 0)
         launch(ARoutePath.LoginActivity)
 
+
     }
+
 
     override fun initData() {
 
