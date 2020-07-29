@@ -10,8 +10,9 @@ import com.cymjoe.work.ApiService
 class MainViewModel : BaseViewModel() {
     private val api = NetManager.createRetrofit(Constant.BASE_URL).create(ApiService::class.java)
     fun login() {
-        launch {
 
+        launch {
+            emitUiState(loading = true)
         }
     }
 }

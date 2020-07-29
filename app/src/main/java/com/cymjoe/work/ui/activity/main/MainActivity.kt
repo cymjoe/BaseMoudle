@@ -14,7 +14,8 @@ import com.cymjoe.lib_base.base.BaseActivity
 import com.cymjoe.lib_base.entity.NoDataBinding
 import com.cymjoe.lib_base.launch
 import com.cymjoe.lib_utils.StatusBarUtils
-import com.cymjoe.module_work.ui.fragment.WorkFragment
+
+import com.cymjoe.module_work.ui.fragment.work.WorkFragment
 import com.cymjoe.moudle_mine.ui.fragment.MineFragment
 
 import com.cymjoe.work.R
@@ -36,9 +37,9 @@ class MainActivity : BaseActivity<NoDataBinding>() {
     override fun initView() {
         StatusBarUtils.setTranslucentStatus(this)
         FragmentUtils.add(supportFragmentManager, fragmentList, R.id.container, 0)
-        launch(ARoutePath.LoginActivity)
 
-//
+
+
     }
 
 
@@ -48,6 +49,11 @@ class MainActivity : BaseActivity<NoDataBinding>() {
     }
 
     override fun startObserve() {
+        viewModel.apply {
+            uiState.observe(this@MainActivity, androidx.lifecycle.Observer {
+
+            })
+        }
 
     }
 
