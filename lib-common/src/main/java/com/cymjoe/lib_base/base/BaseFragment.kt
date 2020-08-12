@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
+import androidx.lifecycle.ViewModel
 import com.cymjoe.lib_base.R
 import com.cymjoe.lib_base.dp
+import com.cymjoe.lib_base.getViewModels
 
 import com.kaopiz.kprogresshud.KProgressHUD
 import kotlinx.coroutines.CoroutineScope
@@ -25,6 +27,7 @@ abstract class BaseFragment<T : ViewDataBinding>(useBinding: Boolean = false) :
     private val _useBinding = useBinding
     private lateinit var mBinding: T
 
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -40,11 +43,12 @@ abstract class BaseFragment<T : ViewDataBinding>(useBinding: Boolean = false) :
         } else inflater.inflate(getLayoutResId(), container, false)
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         initView()
         startObserve()
-
         initData()
 
     }
@@ -87,11 +91,16 @@ abstract class BaseFragment<T : ViewDataBinding>(useBinding: Boolean = false) :
 
     abstract fun initData()
 
+
+
     abstract fun startObserve()
+
     override fun onDestroy() {
         if (registerEvent()) {
             EventBus.getDefault().unregister(this)
         }
         super.onDestroy()
     }
+
+
 }

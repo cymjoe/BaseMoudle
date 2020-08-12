@@ -1,15 +1,12 @@
 package com.cymjoe.work.ui.activity.main
 
-import android.graphics.Color
 import android.os.Build
-import android.os.Bundle
 import android.view.View
 import androidx.annotation.RequiresApi
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.blankj.utilcode.util.FragmentUtils
 
 import com.cymjoe.lib_arouter.ARoutePath
-import com.cymjoe.lib_base.BuildConfig
 import com.cymjoe.lib_base.base.BaseActivity
 import com.cymjoe.lib_base.entity.NoDataBinding
 import com.cymjoe.lib_base.launch
@@ -21,9 +18,6 @@ import com.cymjoe.moudle_mine.ui.fragment.MineFragment
 import com.cymjoe.work.R
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import java.io.File
-import java.io.FileWriter
-import java.util.*
 
 @Route(path = ARoutePath.MainActivity)
 class MainActivity : BaseActivity<NoDataBinding>() {
@@ -91,5 +85,7 @@ class MainActivity : BaseActivity<NoDataBinding>() {
             }
         }
     }
+
+
 }
 

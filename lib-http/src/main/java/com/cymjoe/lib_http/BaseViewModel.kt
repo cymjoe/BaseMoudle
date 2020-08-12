@@ -1,11 +1,12 @@
 package com.cymjoe.lib_http
 
+
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 
-
 import kotlinx.coroutines.*
+import kotlin.system.exitProcess
 
 open class BaseViewModel : ViewModel() {
     data class UiModel(
@@ -13,6 +14,7 @@ open class BaseViewModel : ViewModel() {
         val showErrorView: Boolean,//是否显示错误信息
         val errorMsg: String? = "",//错误信息
         val showNoNetView: Boolean,//是否显示无网络信息
+        val success: Boolean,//请求成功无需返回值
         val showNoDataView: Boolean //是否显示默认空页面
     )
 
@@ -23,6 +25,7 @@ open class BaseViewModel : ViewModel() {
         showErrorView: Boolean = false,//是否显示错误信息
         errorMsg: String = "",//错误信息
         showNoNetView: Boolean = false,//是否显示无网络信息
+        success: Boolean = false,//请求成功无需返回值
         showNoDataView: Boolean = false//是否显示默认空页面
     ) {
         val uiModel =
@@ -31,6 +34,7 @@ open class BaseViewModel : ViewModel() {
                 showErrorView,
                 errorMsg,
                 showNoNetView,
+                success,
                 showNoDataView
             )
         uiState.value = uiModel
@@ -43,7 +47,6 @@ open class BaseViewModel : ViewModel() {
         viewModelScope.launch { block() }
 
     }
-
 
 
     suspend fun <T> launchOnIO(block: suspend CoroutineScope.() -> T) {
@@ -91,6 +94,7 @@ open class BaseViewModel : ViewModel() {
                 tryBlock()
             } catch (e: APIException) {
                 emitUiState(loading = false)
+                mException.value=e
                 if (handleCancellationExceptionManually) {
                     catchBlock(e)
                 } else {

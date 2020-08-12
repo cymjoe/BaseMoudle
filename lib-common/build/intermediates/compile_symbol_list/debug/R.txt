@@ -26,6 +26,13 @@ int anim design_bottom_sheet_slide_in 0x0
 int anim design_bottom_sheet_slide_out 0x0
 int anim design_snackbar_in 0x0
 int anim design_snackbar_out 0x0
+int anim fragment_close_enter 0x0
+int anim fragment_close_exit 0x0
+int anim fragment_fade_enter 0x0
+int anim fragment_fade_exit 0x0
+int anim fragment_fast_out_extra_slow_in 0x0
+int anim fragment_open_enter 0x0
+int anim fragment_open_exit 0x0
 int anim mtrl_bottom_sheet_slide_in 0x0
 int anim mtrl_bottom_sheet_slide_out 0x0
 int anim mtrl_card_lowers_interpolator 0x0
@@ -110,6 +117,7 @@ int attr backgroundTintMode 0x0
 int attr badgeGravity 0x0
 int attr badgeStyle 0x0
 int attr badgeTextColor 0x0
+int attr banner_orientation 0x0
 int attr barLength 0x0
 int attr barrierAllowsGoneWidgets 0x0
 int attr barrierDirection 0x0
@@ -265,6 +273,7 @@ int attr daySelectedStyle 0x0
 int attr dayStyle 0x0
 int attr dayTodayStyle 0x0
 int attr defaultQueryHint 0x0
+int attr delay_time 0x0
 int attr dialogCornerRadius 0x0
 int attr dialogPreferredPadding 0x0
 int attr dialogTheme 0x0
@@ -373,10 +382,25 @@ int attr iconTintMode 0x0
 int attr iconifiedByDefault 0x0
 int attr imageButtonStyle 0x0
 int attr indeterminateProgressStyle 0x0
+int attr indicator_gravity 0x0
+int attr indicator_height 0x0
+int attr indicator_margin 0x0
+int attr indicator_marginBottom 0x0
+int attr indicator_marginLeft 0x0
+int attr indicator_marginRight 0x0
+int attr indicator_marginTop 0x0
+int attr indicator_normal_color 0x0
+int attr indicator_normal_width 0x0
+int attr indicator_radius 0x0
+int attr indicator_selected_color 0x0
+int attr indicator_selected_width 0x0
+int attr indicator_space 0x0
 int attr initialActivityCount 0x0
 int attr insetForeground 0x0
 int attr isLightTheme 0x0
 int attr isMaterialTheme 0x0
+int attr is_auto_loop 0x0
+int attr is_infinite_loop 0x0
 int attr itemBackground 0x0
 int attr itemFillColor 0x0
 int attr itemHorizontalPadding 0x0
@@ -677,6 +701,7 @@ int attr subtitleTextAppearance 0x0
 int attr subtitleTextColor 0x0
 int attr subtitleTextStyle 0x0
 int attr suggestionRowLayout 0x0
+int attr swipeRefreshLayoutProgressSpinnerBackgroundColor 0x0
 int attr switchMinWidth 0x0
 int attr switchPadding 0x0
 int attr switchStyle 0x0
@@ -819,6 +844,7 @@ int color background_floating_material_dark 0x0
 int color background_floating_material_light 0x0
 int color background_material_dark 0x0
 int color background_material_light 0x0
+int color black 0x0
 int color bright_foreground_disabled_material_dark 0x0
 int color bright_foreground_disabled_material_light 0x0
 int color bright_foreground_inverse_material_dark 0x0
@@ -832,9 +858,7 @@ int color cardview_light_background 0x0
 int color cardview_shadow_end_color 0x0
 int color cardview_shadow_start_color 0x0
 int color checkbox_themeable_attribute_color 0x0
-int color colorAccent 0x0
-int color colorPrimary 0x0
-int color colorPrimaryDark 0x0
+int color color_303333 0x0
 int color design_bottom_navigation_shadow_color 0x0
 int color design_box_stroke_color 0x0
 int color design_dark_default_color_background 0x0
@@ -985,6 +1009,7 @@ int color test_mtrl_calendar_day 0x0
 int color test_mtrl_calendar_day_selected 0x0
 int color tooltip_background_dark 0x0
 int color tooltip_background_light 0x0
+int color white 0x0
 int dimen abc_action_bar_content_inset_material 0x0
 int dimen abc_action_bar_content_inset_with_nav 0x0
 int dimen abc_action_bar_default_height_material 0x0
@@ -1408,6 +1433,7 @@ int drawable abc_textfield_search_material 0x0
 int drawable abc_vector_test 0x0
 int drawable avd_hide_password 0x0
 int drawable avd_show_password 0x0
+int drawable banner_risk_pre 0x0
 int drawable brvah_sample_footer_loading 0x0
 int drawable brvah_sample_footer_loading_progress 0x0
 int drawable btn_checkbox_checked_mtrl 0x0
@@ -1424,13 +1450,14 @@ int drawable design_ic_visibility 0x0
 int drawable design_ic_visibility_off 0x0
 int drawable design_password_eye 0x0
 int drawable design_snackbar_background 0x0
+int drawable dilan 0x0
+int drawable dor_icon 0x0
+int drawable heal_icon 0x0
 int drawable ic_calendar_black_24dp 0x0
 int drawable ic_clear_black_24dp 0x0
 int drawable ic_edit_black_24dp 0x0
 int drawable ic_keyboard_arrow_left_black_24dp 0x0
 int drawable ic_keyboard_arrow_right_black_24dp 0x0
-int drawable ic_launcher_background 0x0
-int drawable ic_launcher_foreground 0x0
 int drawable ic_menu_arrow_down_black_24dp 0x0
 int drawable ic_menu_arrow_up_black_24dp 0x0
 int drawable ic_mtrl_checked_circle 0x0
@@ -1438,6 +1465,11 @@ int drawable ic_mtrl_chip_checked_black 0x0
 int drawable ic_mtrl_chip_checked_circle 0x0
 int drawable ic_mtrl_chip_close_circle 0x0
 int drawable kprogresshud_spinner 0x0
+int drawable logo 0x0
+int drawable logo_shadow 0x0
+int drawable me_icon_18 0x0
+int drawable mine_check 0x0
+int drawable mine_normal 0x0
 int drawable mtrl_dialog_background 0x0
 int drawable mtrl_dropdown_arrow 0x0
 int drawable mtrl_ic_arrow_drop_down 0x0
@@ -1460,9 +1492,12 @@ int drawable notification_template_icon_bg 0x0
 int drawable notification_template_icon_low_bg 0x0
 int drawable notification_tile_bg 0x0
 int drawable notify_panel_notification_icon_bg 0x0
+int drawable raed_icon 0x0
 int drawable test_custom_background 0x0
 int drawable tooltip_frame_dark 0x0
 int drawable tooltip_frame_light 0x0
+int drawable work_check 0x0
+int drawable work_normal 0x0
 int id BOTTOM_END 0x0
 int id BOTTOM_START 0x0
 int id BaseQuickAdapter_databinding_support 0x0
@@ -1577,12 +1612,14 @@ int id filled 0x0
 int id filter_chip 0x0
 int id fixed 0x0
 int id forever 0x0
+int id fragment_container_view_tag 0x0
 int id ghost_view 0x0
 int id ghost_view_holder 0x0
 int id glide_custom_view_target_tag 0x0
 int id gone 0x0
 int id group_divider 0x0
 int id home 0x0
+int id horizontal 0x0
 int id icon 0x0
 int id icon_group 0x0
 int id image 0x0
@@ -1741,8 +1778,10 @@ int id unchecked 0x0
 int id uniform 0x0
 int id unlabeled 0x0
 int id up 0x0
+int id vertical 0x0
 int id view_offset_helper 0x0
 int id visible 0x0
+int id visible_removing_fragment_view_tag 0x0
 int id wrap 0x0
 int id wrap_content 0x0
 int integer abc_config_activityDefaultDur 0x0
@@ -1823,6 +1862,7 @@ int layout design_navigation_menu_item 0x0
 int layout design_text_input_end_icon 0x0
 int layout design_text_input_start_icon 0x0
 int layout kprogresshud_hud 0x0
+int layout layout_head_view 0x0
 int layout mtrl_alert_dialog 0x0
 int layout mtrl_alert_dialog_actions 0x0
 int layout mtrl_alert_dialog_title 0x0
@@ -1884,8 +1924,6 @@ int layout text_view_with_line_height_from_layout 0x0
 int layout text_view_with_line_height_from_style 0x0
 int layout text_view_with_theme_line_height 0x0
 int layout text_view_without_line_height 0x0
-int mipmap ic_launcher 0x0
-int mipmap ic_launcher_round 0x0
 int plurals mtrl_badge_content_description 0x0
 int string abc_action_bar_home_description 0x0
 int string abc_action_bar_up_description 0x0
@@ -1926,8 +1964,9 @@ int string abc_searchview_description_voice 0x0
 int string abc_shareactionprovider_share_with 0x0
 int string abc_shareactionprovider_share_with_application 0x0
 int string abc_toolbar_collapse_description 0x0
-int string app_name 0x0
 int string appbar_scrolling_view_behavior 0x0
+int string banner_adapter_null_error 0x0
+int string banner_adapter_use_error 0x0
 int string bottom_sheet_behavior 0x0
 int string brvah_load_complete 0x0
 int string brvah_load_end 0x0
@@ -1938,12 +1977,19 @@ int string character_counter_overflowed_content_description 0x0
 int string character_counter_pattern 0x0
 int string chip_text 0x0
 int string clear_text_end_icon_content_description 0x0
+int string consult_a_doctor 0x0
 int string error_icon_content_description 0x0
 int string exposed_dropdown_menu_content_description 0x0
 int string fab_transformation_scrim_behavior 0x0
 int string fab_transformation_sheet_behavior 0x0
+int string health 0x0
+int string health_management 0x0
+int string health_record 0x0
 int string hide_bottom_view_on_scroll_behavior 0x0
+int string hospitalization_management 0x0
 int string icon_content_description 0x0
+int string indicator_color_error 0x0
+int string indicator_null_error 0x0
 int string mtrl_badge_numberless_content_description 0x0
 int string mtrl_chip_close_icon_content_description 0x0
 int string mtrl_exceed_max_badge_number_suffix 0x0
@@ -2010,7 +2056,6 @@ int style Animation_AppCompat_DropDownUp 0x0
 int style Animation_AppCompat_Tooltip 0x0
 int style Animation_Design_BottomSheetDialog 0x0
 int style Animation_MaterialComponents_BottomSheetDialog 0x0
-int style AppTheme 0x0
 int style Base_AlertDialog_AppCompat 0x0
 int style Base_AlertDialog_AppCompat_Light 0x0
 int style Base_Animation_AppCompat_Dialog 0x0
@@ -2941,6 +2986,24 @@ int[] styleable BallPulseFooter { 0x0, 0x0, 0x0 }
 int styleable BallPulseFooter_srlAnimatingColor 0
 int styleable BallPulseFooter_srlClassicsSpinnerStyle 1
 int styleable BallPulseFooter_srlNormalColor 2
+int[] styleable Banner { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
+int styleable Banner_banner_orientation 0
+int styleable Banner_delay_time 1
+int styleable Banner_indicator_gravity 2
+int styleable Banner_indicator_height 3
+int styleable Banner_indicator_margin 4
+int styleable Banner_indicator_marginBottom 5
+int styleable Banner_indicator_marginLeft 6
+int styleable Banner_indicator_marginRight 7
+int styleable Banner_indicator_marginTop 8
+int styleable Banner_indicator_normal_color 9
+int styleable Banner_indicator_normal_width 10
+int styleable Banner_indicator_radius 11
+int styleable Banner_indicator_selected_color 12
+int styleable Banner_indicator_selected_width 13
+int styleable Banner_indicator_space 14
+int styleable Banner_is_auto_loop 15
+int styleable Banner_is_infinite_loop 16
 int[] styleable BezierRadarHeader { 0x0, 0x0, 0x0 }
 int styleable BezierRadarHeader_srlAccentColor 0
 int styleable BezierRadarHeader_srlEnableHorizontalDrag 1
@@ -3332,6 +3395,13 @@ int[] styleable ForegroundLinearLayout { 0x1010109, 0x1010200, 0x0 }
 int styleable ForegroundLinearLayout_android_foreground 0
 int styleable ForegroundLinearLayout_android_foregroundGravity 1
 int styleable ForegroundLinearLayout_foregroundInsidePadding 2
+int[] styleable Fragment { 0x10100d0, 0x1010003, 0x10100d1 }
+int styleable Fragment_android_id 0
+int styleable Fragment_android_name 1
+int styleable Fragment_android_tag 2
+int[] styleable FragmentContainerView { 0x1010003, 0x10100d1 }
+int styleable FragmentContainerView_android_name 0
+int styleable FragmentContainerView_android_tag 1
 int[] styleable GradientColor { 0x101020b, 0x10101a2, 0x10101a3, 0x101019e, 0x1010512, 0x1010513, 0x10101a4, 0x101019d, 0x1010510, 0x1010511, 0x1010201, 0x10101a1 }
 int styleable GradientColor_android_centerColor 0
 int styleable GradientColor_android_centerX 1
@@ -3634,6 +3704,8 @@ int styleable StateListDrawable_android_variablePadding 4
 int styleable StateListDrawable_android_visible 5
 int[] styleable StateListDrawableItem { 0x1010199 }
 int styleable StateListDrawableItem_android_drawable 0
+int[] styleable SwipeRefreshLayout { 0x0 }
+int styleable SwipeRefreshLayout_swipeRefreshLayoutProgressSpinnerBackgroundColor 0
 int[] styleable SwitchCompat { 0x1010125, 0x1010124, 0x1010142, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable SwitchCompat_android_textOff 0
 int styleable SwitchCompat_android_textOn 1

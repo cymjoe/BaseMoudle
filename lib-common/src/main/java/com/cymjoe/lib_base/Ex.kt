@@ -1,8 +1,6 @@
 package com.cymjoe.lib_base
 
 import android.app.Activity
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.ImageView
@@ -25,7 +23,10 @@ import com.cymjoe.lib_utils.RSAUtils
 import org.greenrobot.eventbus.EventBus
 
 
-fun Any.launch(clazz: String, block: (Postcard.() -> Unit)? = null) {
+fun launch(
+    clazz: String,
+    block: (Postcard.() -> Unit)? = null
+) {
     ARouter.getInstance().build(clazz).apply {
         if (block != null) {
             block()
@@ -39,7 +40,7 @@ fun Activity.launchOver(clazz: String) {
     finish()
 }
 
-fun Any.launch(clazz: String, bundle: Bundle) {
+fun launch(clazz: String, bundle: Bundle) {
     ARouteUtils.launch(clazz, bundle)
 }
 

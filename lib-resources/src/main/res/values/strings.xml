@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="health">疾病知识</string>
+    <string name="consult_a_doctor">咨询医生</string>
+    <string name="health_management">健康管理</string>
+    <string name="hospitalization_management">住院管理</string>
+    <string name="health_record">健康档案</string>
+</resources>

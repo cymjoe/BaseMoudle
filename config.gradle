@@ -12,8 +12,8 @@ ext {
             "app"  : "com.cymjoe.work",
             "home" : "com.cymjoe.moudle_home",
             "login": "com.cymjoe.moudle_login",
-            "work": "com.cymjoe.moudle_work",
-            "mine": "com.cymjoe.moudle_mine",
+            "work" : "com.cymjoe.moudle_work",
+            "mine" : "com.cymjoe.moudle_mine",
             "user" : "com.cymjoe.moudle_user"
     ]
 
@@ -49,7 +49,8 @@ ext {
             "progress" : "com.kaopiz:kprogresshud:1.1.0",
             "scope"    : "org.koin:koin-androidx-scope:2.0.1",
             "viewmodel": "org.koin:koin-androidx-viewmodel:2.0.1",
-            "multidex": "androidx.multidex:multidex:2.0.1",
+            "multidex" : "androidx.multidex:multidex:2.0.1",
+            "banner"   : "com.youth.banner:banner:2.0.10",
             "eventbus" : "org.greenrobot:eventbus:3.1.1"
     ]
 }

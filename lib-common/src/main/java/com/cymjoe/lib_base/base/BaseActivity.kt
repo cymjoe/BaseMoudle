@@ -9,7 +9,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
-import com.cymjoe.lib_base.R
+import androidx.lifecycle.ViewModelProviders
 import com.cymjoe.lib_base.entity.FinishActivityEvent
 import com.kaopiz.kprogresshud.KProgressHUD
 import kotlinx.coroutines.CoroutineScope
@@ -17,6 +17,7 @@ import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.cancel
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
+
 
 /**
  * Created by cymjoe
@@ -132,6 +133,10 @@ abstract class BaseActivity<T : ViewDataBinding>(useBinding: Boolean = false) :
         if (event.activityName == this::class.java.simpleName) {
             finish()
         }
+    }
+
+    public fun getViewModel() {
+
     }
 }
 
