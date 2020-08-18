@@ -25,7 +25,7 @@ class WorkFragment : BaseFragment<NoDataBinding>(),
     override fun getLayoutResId() = R.layout.fragment_work
     private val list = mutableListOf(HomeEntity(0), HomeEntity(1), HomeEntity(2), HomeEntity(3))
 
-    lateinit var workAdapter: WorkAdapter
+    private lateinit var workAdapter: WorkAdapter
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun initView() {
