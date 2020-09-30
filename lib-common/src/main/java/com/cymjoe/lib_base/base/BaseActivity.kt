@@ -133,7 +133,7 @@ abstract class BaseActivity<T : ViewDataBinding>(useBinding: Boolean = false) :
         super.onDestroy()
 
     }
-
+//
     @Subscribe
     public fun finishActivity(event: FinishActivityEvent) {
         if (event.activityName == this::class.java.simpleName) {
