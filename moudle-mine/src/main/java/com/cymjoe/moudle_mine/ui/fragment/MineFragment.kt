@@ -37,8 +37,6 @@ class MineFragment : BaseFragment<NoDataBinding >() {
         }
     }
 
-    override fun getViewModels(): ViewModel {
-        TODO("Not yet implemented")
-    }
+
 
 }

@@ -49,4 +49,5 @@ dependencies {
     api project(':lib-model')
     api project(':lib-widget')
     api project(':lib-resources')
+    api project(':lib-gson')
 }

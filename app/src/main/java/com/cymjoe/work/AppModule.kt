@@ -1,5 +1,6 @@
 package com.cymjoe.work
 
+import com.cymjoe.module_work.ui.fragment.work.WorkViewModel
 import com.cymjoe.work.ui.activity.main.MainViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -7,6 +8,7 @@ import org.koin.dsl.module
 
 val viewModelModule = module {
     viewModel { MainViewModel() }
+    viewModel { WorkViewModel() }
 
 //    viewModel { ArticleViewModel(get(), get(), get(), get(), get()) }
 //    viewModel { SystemViewModel(get(), get()) }
