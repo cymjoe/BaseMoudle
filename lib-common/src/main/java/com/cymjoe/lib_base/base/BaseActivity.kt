@@ -98,7 +98,9 @@ abstract class BaseActivity<T : ViewDataBinding>(useBinding: Boolean = false) :
             getLayoutResId()
         )
         avoidLauncherAgain()
-        EventBus.getDefault().register(this)
+        if (openEventBus()) {
+            EventBus.getDefault().register(this)
+        }
         initView()
         initData()
         startObserve()
@@ -119,12 +121,17 @@ abstract class BaseActivity<T : ViewDataBinding>(useBinding: Boolean = false) :
     abstract fun initData()
     abstract fun startObserve()
 
+    /**
+     * 是否打开eventBus开关
+     */
+    open fun openEventBus() = false
+
     override fun onDestroy() {
-
-        EventBus.getDefault().unregister(this)
-
+        if (openEventBus()) {
+            EventBus.getDefault().unregister(this)
+        }
         super.onDestroy()
-        cancel()
+
     }
 
     @Subscribe

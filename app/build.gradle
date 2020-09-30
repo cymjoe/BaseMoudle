@@ -27,6 +27,16 @@ android {
 
     }
 
+    signingConfigs {
+        release {
+            storeFile file('E:\\test\\BaseMoudle\\cymjoe.jks')
+            storePassword '111111'
+            keyAlias 'key0'
+            keyPassword '111111'
+        }
+
+
+    }
     buildTypes {
         release {
             // 开启混淆
@@ -36,6 +46,8 @@ android {
             // 移除无用的资源文件
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            debuggable true
         }
     }
     compileOptions {

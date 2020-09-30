@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/lib-common" />
+            <option value="$PROJECT_DIR$/lib-gson" />
             <option value="$PROJECT_DIR$/lib-http" />
             <option value="$PROJECT_DIR$/lib-model" />
             <option value="$PROJECT_DIR$/lib-resources" />

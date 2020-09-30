@@ -1,6 +1,7 @@
 package com.cymjoe.lib_model.response
 
 import android.text.TextUtils
+import androidx.annotation.Keep
 
 /**
  * Place：Chengdu,China
@@ -10,6 +11,7 @@ import android.text.TextUtils
  * Description:
  * Copyright©2020 Past Present Future. All Rights Reserved
  */
+@Keep
 class BannerEntity(
     /**
      * 主键
